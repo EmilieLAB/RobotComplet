@@ -94,9 +94,9 @@ public class Robot {
         List<CheckPoint> road = new ArrayList<CheckPoint>();
         while (roadBook.hasInstruction()) {
             Instruction nextInstruction = roadBook.next();
-            if (nextInstruction == FORWARD) moveForward();
-            if (nextInstruction == BACKWARD) moveBackward();
-            else if (nextInstruction == TURNLEFT) turnLeft();
+            if (nextInstruction == FORWARD) moveForward(); else
+            if (nextInstruction == BACKWARD) moveBackward(); else
+            if (nextInstruction == TURNLEFT) turnLeft();
             else turnRight();
             CheckPoint checkPoint = new CheckPoint(position, direction, false);
             road.add(checkPoint);
