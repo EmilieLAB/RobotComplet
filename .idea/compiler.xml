@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="fgrRobotComplet" />
+        <module name="ELARobotComplet" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ELARobotComplet" target="11" />
+      <module name="fgrRobotComplet" target="11" />
       <module name="xxxRobotComplet" target="1.7" />
     </bytecodeTargetLevel>
   </component>

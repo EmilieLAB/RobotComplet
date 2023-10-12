@@ -12,7 +12,7 @@ public class BatteryUnitTest {
         //---DEFINE---
         Battery battery = new Battery();
         //---WHEN-THEN--
-        Assert.assertEquals(100, battery.getChargeLevel(), 0);
+        Assert.assertEquals(20, battery.getChargeLevel(), 0);
     }
 
     @Ignore
@@ -44,9 +44,9 @@ public class BatteryUnitTest {
         //---DEFINE---
         Battery cell = new Battery();
         //---WHEN---
-        cell.use(25f);
+        cell.use(10f);
         //---THEN---
-        Assert.assertEquals(75f, cell.getChargeLevel(),0);
+        Assert.assertEquals(10f, cell.getChargeLevel(),0);
     }
 
     @Test
@@ -64,7 +64,7 @@ public class BatteryUnitTest {
         //---DEFINE---
         Battery battery = new Battery();
         //---WHEN-THEN--
-        Assert.assertTrue(battery.canDeliver(75));
+        Assert.assertTrue(battery.canDeliver(15));
     }
 
     @Test

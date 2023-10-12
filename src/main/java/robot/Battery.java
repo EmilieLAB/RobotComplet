@@ -7,7 +7,7 @@ public class Battery {
     private float chargeLevel;
 
     public Battery() {
-        chargeLevel = 100;
+        chargeLevel = 20;
     }
 
     public void charge() {
